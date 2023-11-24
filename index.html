@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finansowy Kalkulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://www.diabetes.ie/wp-content/uploads/2021/05/logo-Placeholder.jpg"
+          alt="Logo"
+        />
+      </header>
+      <section class="info">
+        <h2>
+          <span id="available-amount"></span>
+        </h2>
+      </section>
+      <section class="finance">
+        <div class="income">
+          <h3>PRZYCHODY</h3>
+          <label for="income-name">Nazwa przychodu:</label>
+          <input type="text" id="income-name" />
+          <label for="income-value">Kwota:</label>
+          <input type="text" id="income-value" />
+          <button id="add-income">Dodaj</button>
+          <ul id="income-list"></ul>
+          <p>Suma przychodów: <span id="total-income">0</span></p>
+        </div>
+        <div class="expenses">
+          <h3>WYDATKI</h3>
+          <label for="expense-name">Nazwa wydatku:</label>
+          <input type="text" id="expense-name" />
+          <label for="expense-value">Kwota:</label>
+          <input type="text" id="expense-value" />
+          <button id="add-expense">Dodaj</button>
+          <ul id="expense-list"></ul>
+          <p>Suma wydatków: <span id="total-expenses">0</span></p>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
